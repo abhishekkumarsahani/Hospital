@@ -12,5 +12,8 @@ namespace Hospital.Models
         public string Name { get; set; }
         public string Type { get; set; }
         public decimal Cost { get; set; }
+        public string Description { get; set; }
+        public ICollection<MedicineReport> MedicineReport { get; set; }
+        public ICollection<PrescribedMedicine> PrescribedMedicine { get; set; }
     }
 }
